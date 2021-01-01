@@ -1,25 +1,15 @@
-/**
- * Copyright (c) 2019 playcrab.All rights reserved.
- */
-
 package com.yf.lintcode.esay;
 
 /**
- * 
- *
- * @date 2019-07-13
- * @author
+ * @date 2021-01-01
+ * @author yanfei
  */
 public class APlusB {
 
     public static void main(String[] args) {
-
         int a = 3;
         int b = 2;
-        b = ~b + 1;
-        //
         int res = aplusb(a, b);
-
         System.out.println(res);
 
     }
