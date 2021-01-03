@@ -1,6 +1,7 @@
 package com.yf.lintcode.binarytree;
 
 import com.yf.lintcode.TreeNode;
+import com.yf.lintcode.TreeUtils;
 
 public class InvertTree {
 
@@ -14,7 +15,7 @@ public class InvertTree {
         root.right.right = new TreeNode(9);
         //traverseTree(root);
         invertTree(root);
-        traverseTree(root);
+        TreeUtils.traverseTree(root);
     }
 
     public static TreeNode invertTree(TreeNode root) {
@@ -26,14 +27,5 @@ public class InvertTree {
         root.left = right;
         root.right = left;
         return root;
-    }
-
-    public static void traverseTree(TreeNode root){
-        if(root == null){
-            return;
-        }
-        traverseTree(root.left);
-        System.out.println(root.val);
-        traverseTree(root.right);
     }
 }
