@@ -27,28 +27,46 @@ public class ConnectNode {
         s.add(root);
         while (!s.empty()) {
             Node pre = null;
-            while (!s.empty()){
+            while (!s.empty()) {
                 Node node = s.pop();
-                if(pre!= null && pre.right!= null){
+                if (pre != null && pre.right != null) {
                     pre.right.next = node.left;// 忘记加next 忘记判断null
                 }
-                if(node.left!=null){
+                if (node.left != null) {
                     node.left.next = node.right;
                 }
                 pre = node;
-                if(node.left != null){
+                if (node.left != null) {
                     tmp.push(node.left);
                 }
-                if(node.right != null){
+                if (node.right != null) {
                     tmp.push(node.right);
                 }
 
             }
             // 第一遍忘记！
-            while (!tmp.empty()){
+            while (!tmp.empty()) {
                 s.push(tmp.pop());
             }
         }
         return root;
+    }
+
+    public static Node connect0(Node root) {
+        if (root == null) {
+            return null;
+        }
+        connectTwo(root.left, root.right);
+        return root;
+    }
+
+    private static void connectTwo(Node left, Node right) {
+        if (left == null || right ==  null) {
+            return;
+        }
+        left.next = right;
+        connectTwo(left.left, left.right);
+        connectTwo(right.left, right.right);
+        connectTwo(left.right, right.left);
     }
 }
