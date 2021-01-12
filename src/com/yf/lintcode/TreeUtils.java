@@ -11,7 +11,9 @@ public class TreeUtils {
     }
 
     public static void buildTree(TreeNode root){
-        root.right = new TreeNode(2);
-        root.right.left = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
     }
 }
