@@ -8,12 +8,29 @@ import java.util.HashSet;
 public class IsValidBST {
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(4);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(5);
-        root.right.left = new TreeNode(4);
+        TreeNode root = new TreeNode(5);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(4);
+        root.right.left = new TreeNode(3);
         root.right.right = new TreeNode(6);
-        System.out.println(isValidBST(root));
+        System.out.println(isValidBST0(root));
+    }
+
+
+    public static boolean isValidBST0(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        ArrayList<Integer> res = new ArrayList<>();
+        boolean flag = treverse(root, res);
+        int pre = res.get(0);
+        for (int i = 1; i < res.size(); i++) {
+            if (pre >= res.get(i)) {
+                return false;
+            }
+            pre = res.get(i);
+        }
+        return true;
     }
 
     public static boolean isValidBST(TreeNode root) {
