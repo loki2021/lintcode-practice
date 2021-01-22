@@ -28,8 +28,9 @@ public class CountPrimes204 {
                     flag = false;
                 }
             }
-            if (flag)
+            if (flag) {
                 cnt++;
+            }
         }
         return cnt;
     }
@@ -53,8 +54,9 @@ public class CountPrimes204 {
                     break;
                 }
             }
-            if (flag)
+            if (flag) {
                 primes.add(i);
+            }
         }
         return primes.size();
     }
@@ -72,8 +74,9 @@ public class CountPrimes204 {
                     break;
                 }
             }
-            if (flag)
+            if (flag) {
                 cnt++;
+            }
         }
         return cnt;
     }
