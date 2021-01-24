@@ -1,10 +1,13 @@
 package com.yf.lintcode.hard;
 
+/**
+ * @author yanfei
+ */
 public class FindMedianSortedArrays {
 
     public static void main(String[] args) {
-        int[] nums1 = new int[]{1};
-        int[] nums2 = new int[]{};
+        int[] nums1 = new int[]{1,3};
+        int[] nums2 = new int[]{2,4};
         System.out.println(findMedianSortedArrays(nums1, nums2));
     }
 
@@ -14,9 +17,8 @@ public class FindMedianSortedArrays {
         merge(nums1, nums2, res);
         if (n % 2 == 0) {
             return (res[n / 2] + res[n / 2 - 1]) / 2.0;
-        } else {
-            return res[n / 2];
         }
+        return res[n / 2];
 
     }
 
@@ -24,23 +26,18 @@ public class FindMedianSortedArrays {
         int i = 0;
         int j = 0;
         int n = 0;
-        while (i < nums1.length && n < res.length) {
+        while (i < nums1.length && n - 1 < res.length / 2) {
             while (j < nums2.length && nums1[i] > nums2[j]) {
                 res[n++] = nums2[j++];
             }
             res[n++] = nums1[i++];
         }
-        if (res.length == n) {
-            return;
-        }
-        while (i < nums1.length) {
+        while (i < nums1.length && n - 1 < res.length / 2) {
             res[n++] = nums1[i++];
         }
-
-        while (j < nums2.length) {
+        while (j < nums2.length && n - 1 < res.length / 2) {
             res[n++] = nums2[j++];
         }
-        return;
     }
 
 }
