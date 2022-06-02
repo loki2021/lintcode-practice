@@ -1,8 +1,7 @@
-package com.yf.lintcode.binarytree;
+package com.yf.leetcode.binarytree;
 
-import com.yf.lintcode.Node;
+import com.yf.leetcode.Node;
 
-import java.util.Queue;
 import java.util.Stack;
 
 public class ConnectNode {

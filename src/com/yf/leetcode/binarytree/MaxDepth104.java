@@ -1,7 +1,7 @@
-package com.yf.lintcode.binarytree;
+package com.yf.leetcode.binarytree;
 
-import com.yf.lintcode.TreeNode;
-import com.yf.lintcode.TreeUtils;
+import com.yf.leetcode.TreeNode;
+import com.yf.leetcode.TreeUtils;
 
 public class MaxDepth104 {
     public static void main(String[] args) {

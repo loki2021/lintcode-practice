@@ -1,6 +1,6 @@
-package com.yf.lintcode.binarytree;
+package com.yf.leetcode.binarytree;
 
-import com.yf.lintcode.TreeNode;
+import com.yf.leetcode.TreeNode;
 
 /*
  * 对称二叉树

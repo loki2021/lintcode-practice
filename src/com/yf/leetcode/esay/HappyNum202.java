@@ -1,4 +1,4 @@
-package com.yf.lintcode.esay;
+package com.yf.leetcode.esay;
 
 import java.util.*;
 

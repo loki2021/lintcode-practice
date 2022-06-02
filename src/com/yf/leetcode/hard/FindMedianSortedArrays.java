@@ -1,4 +1,4 @@
-package com.yf.lintcode.hard;
+package com.yf.leetcode.hard;
 
 public class FindMedianSortedArrays {
 

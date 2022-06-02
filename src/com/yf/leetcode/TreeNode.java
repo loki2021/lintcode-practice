@@ -1,4 +1,4 @@
-package com.yf.lintcode;
+package com.yf.leetcode;
 
 public class TreeNode {
     public int val;

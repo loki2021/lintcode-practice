@@ -1,4 +1,4 @@
-package com.yf.lintcode;
+package com.yf.leetcode;
 
 public class ListNode {
     public int val;

@@ -1,6 +1,6 @@
-package com.yf.lintcode.mid;
+package com.yf.leetcode.mid;
 
-import com.yf.lintcode.ListNode;
+import com.yf.leetcode.ListNode;
 
 public class addTwoNumbers2 {
 

@@ -1,4 +1,4 @@
-package com.yf.lintcode.esay;
+package com.yf.leetcode.esay;
 
 /**
  * @date 2021-01-01

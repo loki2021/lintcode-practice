@@ -1,6 +1,6 @@
-package com.yf.lintcode.esay;
+package com.yf.leetcode.esay;
 
-import com.yf.lintcode.ListNode;
+import com.yf.leetcode.ListNode;
 
 public class RemoveElements203 {
     public static void main(String[] args) {
