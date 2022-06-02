@@ -10,6 +10,9 @@ public class APlusB {
         int a = 3;
         int b = 2;
         int res = aplusb(a, b);
+        int i = 16000000;
+        long j = i * 16000000L;
+        System.out.println(j);
         System.out.println(res);
 
     }
