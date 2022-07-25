@@ -33,8 +33,9 @@ public class addTwoNumbers2 {
     }
 
     public static void add(ListNode l1, ListNode l2, ListNode res) {
-        if (l1 == null && l2 == null)
+        if (l1 == null && l2 == null) {
             return;
+        }
         if (l1 == null) {
             int n2 = l2.val;
             if (n2 >= 10) {

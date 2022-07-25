@@ -6,6 +6,21 @@ public class TwoSum {
 
     }
 
+    public int[] twoSum1(int[] nums, int target) {
+        int[] res = new int[2];
+
+
+
+        return res;
+    }
+
+
+
+
+
+
+
+
     public int[] twoSum(int[] nums, int target) {
         int[] res = new int[2];
 
